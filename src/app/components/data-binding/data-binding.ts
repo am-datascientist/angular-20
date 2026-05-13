@@ -14,8 +14,19 @@ export class DataBinding {
 
  maxlength : number = 5;
   
- minChar: number = 3;
+ minChar : number = 3;
+
+ inputType : string = "checkbox";
+
+ myClassName : string = "myColor";
 
  constructor()  {
+  }
+
+  showWelcomeMessage() {
+    alert("welcome to Angular 20")
+  }
+  changeCourseName() {
+    this.courseName = "reactjs Tutorial"
   }
 }

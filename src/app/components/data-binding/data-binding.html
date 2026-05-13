@@ -6,7 +6,7 @@
             {{courseName}}
         </td>
         <td>
- //         {{productPrice}}
+            {{productPrice}}
         </td>
         <td>
             <span>{{courseName}}</span>
@@ -20,7 +20,20 @@
             <input type="text" value="{{courseName}}">
         </td>
         <td>
-            <input type="text" [max]="maxlength" [minLength]="minChar">
+            <input [type]="inputType" [max]="maxlength" [minLength]="minChar">
+        </td>
+        <td>
+            <p [class]="myClassName">This is samplee para</p>
+        </td>
+    </tr>
+
+    <tr>
+
+        <td>
+            <button (click)="showWelcomeMessage()"> Show Message</button>
+        </td>
+        <td>
+            <button (click)="changeCourseName()">change Course</button>
         </td>
     </tr>
      
