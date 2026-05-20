@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-data-binding',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './data-binding.html',
   styleUrl: './data-binding.css',
 })
@@ -29,4 +30,8 @@ export class DataBinding {
   changeCourseName() {
     this.courseName = "reactjs Tutorial"
   }
+  onCityChange() {
+    alert("City chnaged")
+  }
+
 }
