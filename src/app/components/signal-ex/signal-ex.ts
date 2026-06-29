@@ -25,6 +25,7 @@ export class SignalEx {
     this.courseName.set("React")
     }, 5000);
     
+    
     console.log(this.courseName())
   }
 }
