@@ -5,6 +5,7 @@ import { DataBinding } from './components/data-binding/data-binding';
 import { Component } from '@angular/core';
 import { SignalEx } from './components/signal-ex/signal-ex';
 import { AttDirective } from './components/att-directive/att-directive';
+import { GetApi } from './components/get-api/get-api';
 
 export const routes: Routes = [
     {
@@ -24,8 +25,12 @@ export const routes: Routes = [
         component: SignalEx 
     },
     {
-        path:'Attribute-dir',
+        path: 'Attribute-dir',
         component:AttDirective
+    },
+    {
+        path: 'get-api',
+        component:GetApi
     }
 
 ];
